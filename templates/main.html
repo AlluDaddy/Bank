@@ -1,0 +1,11 @@
+
+<form action="/" method="POST"  style="border:3px black solid;margin-left:30%;margin-right:30%;padding:3%">
+{% csrf_token %}
+
+<h3>Enter Full Name: <input name="name"></h3>
+<h3>Password: <input name="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  title="Please enter digits,special character, alphabets"></h3>
+<h3>Enter Email Address: <input name="email" type="email"></h3>
+<h3>Enter Mobile number: <input name="tel" pattern="[6789][0-9]{9}" title="Please enter valid phone number"></h3>
+
+<button type="submit">Submit</button>
+</form>
